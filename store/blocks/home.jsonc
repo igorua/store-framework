@@ -1,6 +1,7 @@
 {
   "store.home": { 
     "blocks": [
+      "slider-layout#home",
       "shelf",
       "rich-text",
       "info-card#button-right",
