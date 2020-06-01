@@ -60,10 +60,9 @@
   },
   "sku-selector": {
     "props": {
-      "showVariationsErrorMessage": true,
       "initialSelection": "empty",
       "showVariationsLabels": true,
-      "hideImpossibleCombinations": false
+      "showVariationsErrorMessage": true
     }
   },
   "product-images": {
