@@ -67,7 +67,6 @@
         "font": "t-heading-3"
       }
     },
-
     "flex-layout.row#about-us": {
       "children": [
         "image#about-us",
