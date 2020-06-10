@@ -17,7 +17,7 @@
                 "skusFilter": "FIRST_AVAILABLE",
                 "simulationBehavior": "skip",
                 "maxItemsPerPage": 8,
-                "orderByField": "OrderByReleaseDateASC",
+                "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
                 "facetsBehavior": "dynamic",
                 "installmentCriteria": "MAX_WITHOUT_INTEREST",
@@ -25,7 +25,7 @@
                 "mapField": "ft"    
             },
             "maxItemsPerPage": 8,
-            "orderByField": "OrderByReleaseDateASC",
+            "orderByField": "OrderByReleaseDateDESC",
             "hideUnavailableItems": true,
             "facetsBehavior": "dynamic",
             "skusFilter": "FIRST_AVAILABLE",
