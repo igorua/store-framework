@@ -7,7 +7,7 @@
     },
     "image#landingbanner": {
         "props": {
-            "src": "https://zaelab.vtexassets.com/arquivos/ids/155401-1200-auto?width=1200&height=auto&aspect=true",
+            "src": "https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg",
             "minWidth": "100%"
         }
     },
@@ -17,9 +17,27 @@
                 "skusFilter": "FIRST_AVAILABLE",
                 "simulationBehavior": "skip"
             },
-            "order-by": "OrderByReleaseDateDESC",
-            "hideUnavailableItems": true,
-            "search-products-count-per-page": "8"
+            "blocks": [
+                "search-result-layout.desktop"
+            ],
+            "props": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 8
+            }
+        }
+    },
+    "search-result-layout.desktop": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#searchtitle",
+            "flex-layout.row#result"
+            //     
+            //    "hideUnavailableItems": true,
+            //  "search-products-count-per-page": "8"
+        ],
+        "props": {
+            "preventRouteChange": true
         }
     }
 }
