@@ -1,0 +1,25 @@
+{
+    "store.custom#landing": {
+        "blocks": [
+            "image#landingbanner",
+            "search-result-layout.customQuery"
+        ]
+    },
+    "image#landingbanner": {
+        "props": {
+            "src": "https://zaelab.vtexassets.com/arquivos/ids/155401-1200-auto?width=1200&height=auto&aspect=true",
+            "minWidth": "100%"
+        }
+    },
+    "search-result-layout.customQuery": {
+        "props": {
+            "querySchema": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "skip"
+            },
+            "order-by": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "search-products-count-per-page": "8"
+        }
+    }
+}
