@@ -1,8 +1,8 @@
 {
   "vtex.menu@2.x:menu#categories": {
     "children": [
-      "menu-item#major",
-      "menu-item#small",
+      "menu-item#major-appliances",
+      "menu-item#small-appliances",
       "menu-item#electronics"
     ],
     "props":{
@@ -11,7 +11,7 @@
   },
 
   // major
-  "menu-item#major": {
+  "menu-item#major-appliances": {
     "props": {
       "itemProps": {
         "tagTitle": "Major Appliance",
@@ -81,7 +81,7 @@
 },
 
 // small
-"menu-item#small": {
+"menu-item#small-appliances": {
     "props": {
       "itemProps": {
         "tagTitle": "Small Appliance",
