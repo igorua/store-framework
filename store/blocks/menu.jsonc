@@ -1,0 +1,88 @@
+{
+    /*
+    "vtex.menu@2.x:menu#categories": {
+      "children": [
+        "menu-item#major-appliances",
+        "menu-item#small-appliances",
+        "menu-item#electronics"
+      ],
+      "props":{
+        "orientation": "horizontal"
+      }
+  },
+  */
+
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#shop"
+    ]
+  },
+  
+  "menu-item#shop": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#bla"] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#bla": {
+    "children": [
+      "vtex.menu@2.x:menu#submenubla"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenubla": {
+    "children": [
+        "menu-item#submenubla"
+    ],
+    "props":{
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#submenubla": {
+    "props": {
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Bla",
+          "text": "Bla"
+        }
+  }
+}
+
+  /*
+  ,
+  "vtex.menu@2.x:submenu#small":{
+    "children":[
+      "vtex.menu@2.x:menu#small",
+      "menu-item#mixers",
+      "menu-item#toasters",
+      "menu-item#coffee"
+    ],
+    "props":{
+        "orientation": "vertical"
+    }
+  },
+  "vtex.menu@2.x:submenu#electronics":{
+    "children":[
+      "vtex.menu@2.x:menu#electronics",
+      "menu-item#cameras",
+      "menu-item#laptops",
+      "menu-item#tvs"
+    ],
+    "props":{
+        "orientation": "vertical"
+    }
+  }
+  */
+}
