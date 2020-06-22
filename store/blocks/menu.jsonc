@@ -11,25 +11,61 @@
   },
 
   // major
-  "menu-item#major-appliances": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Major Appliance",
-        "text": "Major Appliance"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#major"] // Defining a submenu
-  },
   "vtex.menu@2.x:submenu#major": {
     "children": [
-      "vtex.menu@2.x:menu#submenurefrigerators",
-      "vtex.menu@2.x:menu#submenuovens",
-      "vtex.menu@2.x:menu#submenuwashers"
+      "vtex.menu@2.x:menu#major"
+    ]
+  },
+  "vtex.menu@2.x:menu#major": {
+    "children": [
+      "menu-item#refrigerators",
+      "menu-item#ovens",
+      "menu-item#washers"
     ],
     "props":{
       "orientation": "vertical"
     }
   },
+
+// small
+"vtex.menu@2.x:submenu#small": { 
+  "children": [
+    "vtex.menu@2.x:menu#small"
+  ]
+},
+  "vtex.menu@2.x:menu#small":{
+    "children": [
+      "menu-item#mixers",
+      "menu-item#toasters",
+      "menu-item#coffee"
+    ],
+    "props":{
+      "orientation": "vertical"
+    }
+  },
+
+// electronics
+  "vtex.menu@2.x:submenu#electronics": { 
+      "children": [
+        "vtex.menu@2.x:menu#electronics"
+      ]
+    },
+      // -------------------------------
+      // Menu items defined in menu-items.jsonc
+      "vtex.menu@2.x:menu#electronics":{
+        "children": [
+          "menu-item#cameras",
+          "menu-item#laptops",
+          "menu-item#tvs"
+        ],
+        "props":{
+          "orientation": "vertical"
+        }
+      }
+
+
+
+/*
   "vtex.menu@2.x:menu#submenurefrigerators": {
     "children": [
         "menu-item#submenurefrigerators"
@@ -80,26 +116,6 @@
   }
 },
 
-// small
-"menu-item#small-appliances": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Small Appliance",
-        "text": "Small Appliance"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#small"] // Defining a submenu
-  },
-  "vtex.menu@2.x:submenu#small": {
-    "children": [
-      "vtex.menu@2.x:menu#submenumixers",
-      "vtex.menu@2.x:menu#submenutoasters",
-      "vtex.menu@2.x:menu#submenucoffee"
-    ],
-    "props":{
-      "orientation": "vertical"
-    }
-  },
   "vtex.menu@2.x:menu#submenumixers": {
     "children": [
         "menu-item#submenumixers"
@@ -151,26 +167,6 @@
 },
 
 
-  // electronics
-  "menu-item#electronics": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Electronics",
-        "text": "Electronics"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#electronics"] // Defining a submenu
-  },
-  "vtex.menu@2.x:submenu#electronics": {
-    "children": [
-      "vtex.menu@2.x:menu#submenucameras",
-      "vtex.menu@2.x:menu#submenulaptops",
-      "vtex.menu@2.x:menu#submenutvs"
-    ],
-    "props":{
-      "orientation": "vertical"
-    }
-  },
   "vtex.menu@2.x:menu#submenucameras": {
     "children": [
         "menu-item#submenucameras"
@@ -220,4 +216,5 @@
         }
   }
 }
+*/
 }
