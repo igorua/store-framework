@@ -27,15 +27,15 @@
 
     "flex-layout.col#menu": {
         "children": [
-          "vtex.menu@2.x:menu#major",
-          "rich-text#header",
-          "image#menu"
+          "vtex.menu@2.x:menu#major"
         ]
     },
 
     "flex-layout.col#img": {
         "children": [
-            "vtex.menu@2.x:menu#major"
+            "vtex.menu@2.x:menu#major",
+            "rich-text#header",
+            "image#menu"
         ],
         "props":{
             "paddingRight": 4,
