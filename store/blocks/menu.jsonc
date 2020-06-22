@@ -18,6 +18,8 @@
     // SUBMENU: MAJOR
     // -------------------------------
     // Menu defined in drawer.jsonc
+
+    /*
     "vtex.menu@2.x:submenu#major": { 
       "children": [
         "vtex.menu@2.x:menu#major"
@@ -35,6 +37,7 @@
           "orientation": "vertical"
         }
       },
+      */
 
 
     // SUBMENU: SMALL APPLIANCES

@@ -10,6 +10,7 @@
       }
     },
     "blocks": [
+      //"flex-layout.row#major",
       "vtex.menu@2.x:submenu#major"
     ]
   },
