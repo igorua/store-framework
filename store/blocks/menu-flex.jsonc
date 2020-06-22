@@ -33,6 +33,7 @@
 
     "flex-layout.col#img": {
         "children": [
+            "flex-layout.col#menu",
             "rich-text#header",
             "image#menu"
         ],
