@@ -33,7 +33,6 @@
 
     "flex-layout.col#img": {
         "children": [
-            "vtex.menu@2.x:menu#major",
             "rich-text#header",
             "image#menu"
         ],
